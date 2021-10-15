@@ -10,6 +10,8 @@ import torch.nn.functional as F
 output1 = open("/home/gonken2019/Desktop/subProject/output/class_list.txt","w")
 output2 = open("/home/gonken2019/Desktop/subProject/output/class_predictts.txt","w")
 
+path_claas_list="/home/gonken2019/Desktop/subProject/output/class_list.txt"
+path_claas_predicts="/home/gonken2019/Desktop/subProject/output/class_predictts.txt"
 
 #plt.rcParams['font.family'] ='sans-serif'#使用するフォント
 #plt.rcParams['xtick.direction'] = 'in'#x軸の目盛線が内向き('in')か外向き('out')か双方向か('inout')
@@ -172,8 +174,9 @@ class MyTrainer:
                 #print(class_list)
                 #print("************************************************************************************")
                 
-                path_claas_list="/home/gonken2019/Desktop/subProject/output/class_list.txt"
-                path_claas_predicts="/home/gonken2019/Desktop/subProject/output/class_predictts.txt"
+                # 元々ここにあったが移動した。
+                # path_claas_list="/home/gonken2019/Desktop/subProject/output/class_list.txt"
+                # path_claas_predicts="/home/gonken2019/Desktop/subProject/output/class_predictts.txt"
                 
                 np.set_printoptions(threshold=np.inf)
                 
