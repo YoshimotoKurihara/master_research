@@ -1,0 +1,35 @@
+(M_2) C:\Users\GonKen2019\Desktop\code\ef>python ef_run_6.py
+[Info] Class and pose : epoch 1@train: loss = 0.36449116840958595
+[Info] Class : epoch 1@train: acc = 0.0
+Traceback (most recent call last):████-------------------------------------------------------------------------| 25.00% [1/4 00:34<01:43]
+  File "ef_run_6.py", line 127, in <module>
+    main()
+  File "ef_run_6.py", line 124, in main
+    trainer1.run(NUM_EPOCH)#
+  File "C:\Users\GonKen2019\Desktop\code\ef\ef_trainer_6.py", line 65, in run
+    self.test()
+  File "C:\Users\GonKen2019\Desktop\code\ef\ef_trainer_6.py", line 76, in test
+    self.iter(train=False)
+  File "C:\Users\GonKen2019\Desktop\code\ef\ef_trainer_6.py", line 96, in iter
+    class_and_pose = self.model(image_list)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\GonKen2019\Desktop\code\ef\ef_model_6.py", line 131, in forward
+    x = self.features(x)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\container.py", line 141, in forward
+    input = module(input)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\GonKen2019\Desktop\code\ef\ef_model_6.py", line 98, in forward
+    return x + self.conv(x)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\container.py", line 141, in forward
+    input = module(input)
+  File "C:\Users\GonKen2019\Anaconda3\envs\M_2\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\GonKen2019\Desktop\code\ef\ef_model_6.py", line 43, in forward
+    return x * y
+RuntimeError: [enforce fail at ..\c10\core\CPUAllocator.cpp:76] data. DefaultCPUAllocator: not enough memory: you tried to allocate 251658240 bytes.
